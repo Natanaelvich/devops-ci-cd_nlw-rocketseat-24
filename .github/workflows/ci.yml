@@ -66,7 +66,7 @@ jobs:
       with:
           service: natanaelvich-api
           image: ${{ steps.build-docker-image.outputs.image }}
-          access-role-arn: arn:aws:iam::403429280851:role/app-runner-role
+          access-role-arn: arn:aws:iam::867118092958:role/app-runner-role
           region: us-east-2
           cpu: 1
           memory: 2
