@@ -1,5 +1,5 @@
 resource "aws_ecr_repository" "natanaelvuch-ci-api" {
-    name = "natanaelvuch-ci"
+    name = "natanaelvich-ci"
     image_tag_mutability = "MUTABLE"
 
     image_scanning_configuration {
