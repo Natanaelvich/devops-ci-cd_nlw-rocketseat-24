@@ -53,7 +53,7 @@ jobs:
         REGISTRY: ${{ steps.login-ecr.outputs.registry }}
         TAG: ${{ steps.generate_tag.outputs.sha }}
       run: |
-        docker build $REGISTRY/natanaelvich-ci:$TAG .
+        docker build -t $REGISTRY/natanaelvich-ci:$TAG .
         docker push $REGISTRY/natanaelvich-ci:$TAG
         docker tag $REGISTRY/natanaelvich-ci:$TAG $REGISTRY/natanaelvich-ci:latest
         docker push $REGISTRY/natanaelvich-ci:latest
